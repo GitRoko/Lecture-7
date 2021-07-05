@@ -1,3 +1,6 @@
+let n = prompt('input n');
+let k = prompt('input k');
+
 function funcDevided(n, k) {
     let result = '';
 
@@ -9,4 +12,7 @@ function funcDevided(n, k) {
 
     return console.log(result);
 }
-funcDevided(20, 3);
+
+if (typeof n === Object || typeof k === Object) {
+    alert('ERROR! Input n and k!');
+} else funcDevided(n, k);
